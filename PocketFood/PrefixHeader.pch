@@ -1,0 +1,122 @@
+//
+//  PrefixHeader.pch
+//  PocketFood
+//
+//  Created by qf on 15/11/17.
+//  Copyright © 2015年 qf. All rights reserved.
+//
+
+#ifndef PrefixHeader_pch
+#define PrefixHeader_pch
+
+/**
+ *  import library
+ */
+#import "AFNetworking.h"
+#import "Masonry.h"
+#import "MJExtension.h"
+#import "MMProgressHUD.h"
+#import "LJBFoodSingleTon.h"
+#import "MJRefresh.h"
+#import "UMSocial.h"
+#import "LJBDBTool.h"
+
+/**
+ *  友盟APPKey
+ */
+#define APPKey @"5652f2d567e58ebe01002452"
+
+/**
+ *  设备相关
+ */
+#define KScreenSize [UIScreen mainScreen].bounds.size
+#define KColor(R, G, B) [UIColor colorWithRed:R/255.0 green:G/255.0 blue:B/255.0 alpha:1]
+
+/**
+ *  搜索关键字列表
+ */
+#define KKeywords_URL @"http://food.boohee.com/fb/v1/keywords"
+
+/**
+ *  搜索关键字
+ */
+#define KSearch_URL @"http://food.boohee.com/fb/v1/foods/search"
+
+/**
+ *  首页广告栏
+ */
+#define KMainBanner_URL @"http://food.boohee.com/fb/v1/welcome"
+
+/**
+ *  首页专题
+ */
+#define KMainTopic_URL @"http://food.boohee.com/fb/v1/topics"
+
+/**
+ *  食物详情
+ */
+#define KFood_URL @"http://food.boohee.com/fb/v1/foods/%@"
+
+/**
+ *  食物原料与做法
+ */
+#define KFoodMaterialCook_URL @"http://food.boohee.com/fb/v1/foods/%@/recipe"
+
+/**
+ *  食物分类
+ */
+#define KFoodCategory_URL @"http://food.boohee.com/fb/v1/categories"
+
+/**
+ *  食物列表
+ */
+#define KFoods_URL @"http://food.boohee.com/fb/v1/foods"
+/**
+ *  食物详情组头类型
+ */
+typedef NS_ENUM(NSInteger, KFoodSectionType) {
+    /**
+     *  评价
+     */
+    KFoodSectionAppraiseType = 0,
+    /**
+     *  热量
+     */
+    KFoodSectionCaloryType,
+    /**
+     *  营养元素
+     */
+    KFoodSectionIngredientType
+};
+
+/**
+ *  食物数据URL类型
+ */
+typedef NS_ENUM(NSInteger, KFoodDataType) {
+    /**
+     *  食物详情URL
+     */
+    KFoodDataDetailType = 0,
+    /**
+     *  食物营养URL
+     */
+    KFoodDataMaterialType
+};
+
+/**
+ *  食物分类item类型
+ */
+typedef NS_ENUM(NSInteger, KFoodCategoryItemType) {
+    /**
+     *  包含图片和标题
+     */
+    KFoodCategoryItemImageTitleType = 0,
+    /**
+     *  只有标题
+     */
+    KFoodCategoryItemTitleType
+};
+
+
+
+#endif /* PrefixHeader_pch */
