@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<array>
+	<string>calory</string>
+	<string>protein</string>
+	<string>fat</string>
+	<string>carbohydrate</string>
+	<string>fiber_dietary</string>
+	<string>vitamin_a</string>
+	<string>vitamin_c</string>
+	<string>vitamin_e</string>
+	<string>carotene</string>
+	<string>thiamine</string>
+	<string>lactoflavin</string>
+	<string>niacin</string>
+	<string>cholesterol</string>
+	<string>magnesium</string>
+	<string>calcium</string>
+	<string>iron</string>
+	<string>zinc</string>
+	<string>copper</string>
+	<string>manganese</string>
+	<string>kalium</string>
+	<string>phosphor</string>
+	<string>natrium</string>
+	<string>selenium</string>
+</array>
+</plist>

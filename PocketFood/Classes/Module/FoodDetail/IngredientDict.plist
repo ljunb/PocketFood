@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>calory</key>
+	<string>热量</string>
+	<key>protein</key>
+	<string>蛋白质</string>
+	<key>fat</key>
+	<string>脂肪</string>
+	<key>carbohydrate</key>
+	<string>碳水化合物</string>
+	<key>fiber_dietary</key>
+	<string>膳食纤维</string>
+	<key>vitamin_a</key>
+	<string>维生素A</string>
+	<key>vitamin_c</key>
+	<string>维生素C</string>
+	<key>vitamin_e</key>
+	<string>维生素E</string>
+	<key>carotene</key>
+	<string>胡萝卜素</string>
+	<key>thiamine</key>
+	<string>维生素B1</string>
+	<key>lactoflavin</key>
+	<string>维生素B2</string>
+	<key>niacin</key>
+	<string>烟酸</string>
+	<key>cholesterol</key>
+	<string>胆固醇</string>
+	<key>magnesium</key>
+	<string>镁</string>
+	<key>calcium</key>
+	<string>钙</string>
+	<key>iron</key>
+	<string>铁</string>
+	<key>zinc</key>
+	<string>锌</string>
+	<key>copper</key>
+	<string>铜</string>
+	<key>manganese</key>
+	<string>锰</string>
+	<key>kalium</key>
+	<string>钾</string>
+	<key>phosphor</key>
+	<string>磷</string>
+	<key>natrium</key>
+	<string>钠</string>
+	<key>selenium</key>
+	<string>硒</string>
+</dict>
+</plist>
