@@ -371,6 +371,7 @@
         _tableView.delegate = self;
         _tableView.dataSource = self;
         _tableView.bounces = NO;
+        _tableView.separatorStyle = UITableViewCellSeparatorStyleNone;
         _tableView.showsVerticalScrollIndicator = NO;
         [self.view addSubview:_tableView];
     }

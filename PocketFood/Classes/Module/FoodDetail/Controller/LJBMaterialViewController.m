@@ -101,6 +101,7 @@
         UITableViewCell * cell = [tableView dequeueReusableCellWithIdentifier:ID];
         if (!cell) {
             cell = [[UITableViewCell alloc] initWithStyle:UITableViewCellStyleValue1 reuseIdentifier:ID];
+            cell.selectionStyle = UITableViewCellSelectionStyleNone;
         }
         
         LJBMaterialCondiment * condimentModel = self.materialModel.condiments[indexPath.row];

@@ -1,9 +1,8 @@
 //
 //  LJBTitleSelectView.m
-//  蝉游记
 //
-//  Created by qf on 15/11/9.
-//  Copyright © 2015年 qf. All rights reserved.
+//  Created by CookieJ on 15/11/9.
+//  Copyright © 2015年 ljunb. All rights reserved.
 //
 
 #define CornerRadius self.bounds.size.height/2

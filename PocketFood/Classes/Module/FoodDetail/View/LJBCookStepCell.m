@@ -82,6 +82,16 @@
         make.left.equalTo(self.position.mas_right).offset(5);
         make.right.equalTo(self.contentView.mas_right).offset(-Gap);
     }];
+    
+    UIView * line = [UIView new];
+    line.backgroundColor = [UIColor lightGrayColor];
+    line.alpha = 0.5;
+    [self.contentView addSubview:line];
+    
+    [line mas_makeConstraints:^(MASConstraintMaker *make) {
+        make.left.bottom.right.equalTo(self.contentView);
+        make.height.equalTo(@0.5);
+    }];
 }
 
 #pragma mark - 重写setter方法

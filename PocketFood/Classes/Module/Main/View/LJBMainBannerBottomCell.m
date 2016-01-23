@@ -68,6 +68,7 @@
     // 滚动视图
     _scrollView = [[UIScrollView alloc] init];
     _scrollView.delegate = self;
+    _scrollView.bounces = NO;
     _scrollView.showsHorizontalScrollIndicator = NO;
     [self.contentView addSubview:_scrollView];
     
