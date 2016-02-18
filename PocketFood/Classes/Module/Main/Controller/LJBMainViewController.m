@@ -81,6 +81,8 @@
     
     // 请求专题数据
     [self getTopicDataFromServer];
+    
+//    self.viewDeckController.delegate = self;
 }
 
 #pragma mark - 设置状态栏
@@ -235,12 +237,10 @@
 }
 
 #pragma mark - UITableView dataSource
-#pragma mark section number
 - (NSInteger)numberOfSectionsInTableView:(UITableView *)tableView {
     return 2;
 }
 
-#pragma mark row number
 - (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section {
     
     if (section == 0) {
@@ -250,7 +250,6 @@
     }
 }
 
-#pragma mark tableView cell
 - (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath {
     
     if (indexPath.section == 0) {
@@ -300,7 +299,6 @@
     return nil;
 }
 
-#pragma mark section headerView
 - (UIView *)tableView:(UITableView *)tableView viewForHeaderInSection:(NSInteger)section {
     
     if (section == 0) {
@@ -317,7 +315,6 @@
     }
 }
 
-#pragma mark section height
 - (CGFloat)tableView:(UITableView *)tableView heightForHeaderInSection:(NSInteger)section {
     
     if (section == 0) {
@@ -327,7 +324,6 @@
     }
 }
 
-#pragma mark row height
 - (CGFloat)tableView:(UITableView *)tableView heightForRowAtIndexPath:(NSIndexPath *)indexPath {
     
     if (indexPath.section == 0) {

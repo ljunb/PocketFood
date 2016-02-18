@@ -52,6 +52,7 @@
 
 @implementation LJBFoodViewController
 
+#pragma mark - Life Cycle
 - (void)viewDidLoad {
     [super viewDidLoad];
     
@@ -147,7 +148,12 @@
 #pragma mark - 计算食物评价高度
 - (void)calculateAppraiseHeight {
 #warning 宽度！
-    CGSize size = [self.foodModel.appraise boundingRectWithSize:CGSizeMake(KScreenSize.width-80, MAXFLOAT) options:NSStringDrawingUsesLineFragmentOrigin | NSStringDrawingUsesFontLeading attributes:@{NSFontAttributeName:[UIFont systemFontOfSize:13]} context:nil].size;
+    CGSize size = [self.foodModel.appraise boundingRectWithSize:CGSizeMake(KScreenSize.width-80, MAXFLOAT)
+                                                        options:NSStringDrawingUsesLineFragmentOrigin
+                                                                | NSStringDrawingUsesFontLeading
+                                                     attributes:@{
+                                                                  NSFontAttributeName : [UIFont systemFontOfSize:13] }
+                                                        context:nil].size;
     
     if (size.height < Min_AppraiseHeight) {
         self.foodModel.appraiseHeight = Min_AppraiseHeight;

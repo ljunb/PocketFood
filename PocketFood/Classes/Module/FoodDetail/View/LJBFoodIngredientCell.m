@@ -86,6 +86,14 @@
         make.height.equalTo(@(Label_Height));
     }];
     
+    UIView * line = [UIView new];
+    line.backgroundColor = [UIColor lightGrayColor];
+    line.alpha = 0.5;
+    [self.contentView addSubview:line];
+    [line mas_makeConstraints:^(MASConstraintMaker *make) {
+        make.left.bottom.right.equalTo(self.contentView);
+        make.height.equalTo(@0.5);
+    }];
 }
 
 #pragma mark - 配置cell
